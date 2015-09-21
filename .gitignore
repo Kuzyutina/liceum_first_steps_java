@@ -48,5 +48,31 @@ public class J1 {
 }
 
     
+    public class Vector {
+    public float i = 0.f;
+    public float j = 0.f;
+     /*
+    конструктор вектора
+    */
+    public Vector(float i, float j){
+          this.i = i;
+          this.j = j;  
+          //System.out.println( i +" "+ j);
+    }
+    
+    public Vector plus(Vector x){
+        float i, j;
+        Vector v3 = new Vector(this.i+x.i, this.j + x.j);
+        return v3;
+    }
+    
+    public boolean equals (Vector x){
+        boolean result = false;
+        if ((this.i == x.i) && (this.j == x.j)){
+            result = true;
+        }
+        return result;
+    }
+
     
 
