@@ -57,7 +57,6 @@ public class J1 {
     public Vector(float i, float j){
           this.i = i;
           this.j = j;  
-          //System.out.println( i +" "+ j);
     }
     
     public Vector plus(Vector x){
